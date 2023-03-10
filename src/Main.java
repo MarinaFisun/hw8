@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -38,4 +39,14 @@ public class Main {
             System.out.println("Год " + i + " численность населения составляет " + currentPopulation);
         }
     }
+    public static void task4() {
+        System.out.println("Task 4");
+        double sum = 15_000F;
+        int month = 1;
+        while (sum < 12_000_000) {
+            sum = sum * 1.07;
+            month++;
+            System.out.println(month + " месяц " + "сумма накоплений равна " + sum);
+        }
+        }
 }
