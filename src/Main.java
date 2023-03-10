@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -81,6 +82,15 @@ public class Main {
                 System.out.println(sum);
             }
             month++;
+        }
+    }
+    public static void task7() {
+        System.out.println("Task 7");
+        int friday = 3;
+        while (friday <31) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+        friday = friday +7;
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
         }
     }
 }
