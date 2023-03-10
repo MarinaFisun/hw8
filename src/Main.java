@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -50,7 +51,7 @@ public class Main {
         while (sum < 12_000_000) {
             sum = sum * 1.07;
             month++;
-            System.out.println(month+ " месяц " + "сумма накоплений равна " + sum);
+            System.out.println(month + " месяц " + "сумма накоплений равна " + sum);
         }
     }
 
@@ -60,12 +61,26 @@ public class Main {
         int month = 1;
         while (sum < 12_000_000) {
             sum = sum * 1.07;
-            if (month %6== 0) {
+            if (month % 6 == 0) {
                 System.out.println(month);
                 System.out.println(sum);
             }
-            month++ ;
+            month++;
         }
     }
 
+    public static void task6() {
+        System.out.println("Task 6");
+        double sum = 15_000;
+        int time = 108;
+        int month = 1;
+        while (month <= time) {
+            sum = sum * 1.07;
+            if (month % 6 == 0) {
+                System.out.println(month);
+                System.out.println(sum);
+            }
+            month++;
+        }
+    }
 }
