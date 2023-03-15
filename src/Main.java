@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -84,13 +85,26 @@ public class Main {
             month++;
         }
     }
+
     public static void task7() {
         System.out.println("Task 7");
         int friday = 3;
-        while (friday <31) {
+        while (friday < 31) {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
-        friday = friday +7;
+            friday = friday + 7;
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
         }
     }
+
+    public static void task8() {
+        System.out.println("Task 8");
+        int currentYear = 2023;
+        int firstYear = 0;
+        for (int i = 0; i > 1817; i = i + 79) {
+                System.out.println(i);
+            }
+        for (int i = 1896; i < 2123; i = i + 79) {
+            System.out.println(i);
+        }
+        }
 }
