@@ -13,10 +13,12 @@ public class Main {
     public static void task1() {
         System.out.println("Task 1");
         int contribution = 15000;
+        int goal = 2_459_000;
         int total = 0;
         int i = 0;
-        while (total < 2_459_000) {
-            total = total + contribution;
+        while (total < goal) {
+//             total = total + contribution;
+            total += contribution;
             System.out.println("Месяц " + i++ + " сумма накоплений равна " + total + " рублей");
         }
     }
@@ -88,23 +90,24 @@ public class Main {
 
     public static void task7() {
         System.out.println("Task 7");
-        int friday = 3;
-        while (friday < 31) {
+        int friday = 7;
+        int daysInMonth = 31;
+        while (friday <= daysInMonth) {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
             friday = friday + 7;
-            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
         }
     }
 
     public static void task8() {
         System.out.println("Task 8");
         int currentYear = 2023;
-        int firstYear = 0;
-        for (int i = 0; i > 1817; i = i + 79) {
-                System.out.println(i);
-            }
-        for (int i = 1896; i < 2123; i = i + 79) {
-            System.out.println(i);
-        }
+        int frequency = 79;
+       int beforeYear = currentYear - 200;
+       int afterYear = currentYear +100;
+       for (int year = 0; year < afterYear; year += 79) {
+           if (year > beforeYear){
+               System.out.println(year);
+           }
+       }
         }
 }
