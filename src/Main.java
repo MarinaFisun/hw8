@@ -90,11 +90,11 @@ public class Main {
 
     public static void task7() {
         System.out.println("Task 7");
-        int friday = 3;
-        while (friday < 31) {
+        int friday = 7;
+        int daysInMonth = 31;
+        while (friday <= daysInMonth) {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
             friday = friday + 7;
-            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
         }
     }
 
