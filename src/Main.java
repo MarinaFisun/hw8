@@ -101,12 +101,13 @@ public class Main {
     public static void task8() {
         System.out.println("Task 8");
         int currentYear = 2023;
-        int firstYear = 0;
-        for (int i = 0; i > 1817; i = i + 79) {
-                System.out.println(i);
-            }
-        for (int i = 1896; i < 2123; i = i + 79) {
-            System.out.println(i);
-        }
+        int frequency = 79;
+       int beforeYear = currentYear - 200;
+       int afterYear = currentYear +100;
+       for (int year = 0; year < afterYear; year += 79) {
+           if (year > beforeYear){
+               System.out.println(year);
+           }
+       }
         }
 }
